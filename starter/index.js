@@ -90,3 +90,10 @@ var finances = [
 // finding length
 var period= finances.length ;
 console.log( "There are "+period+" months in the period");
+
+
+// extracting months and numbers from array
+for ( var i=0 ; i< finances.length; i++){
+  var months=finances[i][0];
+  var numbers=finances[i][1];
+}
