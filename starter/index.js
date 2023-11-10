@@ -86,3 +86,7 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// finding length
+var period= finances.length ;
+console.log( "There are "+period+" months in the period");
