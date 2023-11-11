@@ -1,9 +1,11 @@
 # Console-Finances
 ## Description
 Here, i was provided with an array (seen in the js file) and then had to add code to figure out what the total months were (using array length ) , net profit of loss(using summing in an array),avg of chnages (using array maths with i[i+1]-i[0]) andf finally greatest increase /decrease in the chnages (which was found using min and max maths and then indeing to find the corresponding month).Therefore, this challenge was testing my knowlege of how js worked and how to use and access arrays in order to be able to pull the desired information out. 
-The final answer
-![answe](starter/images/answer.png)
-link to site
+
+### The final answer
+![answer](starter/images/answer.png)
+### link to site
+
 ## Installation
 Press the green  code button in the top right of the screen and copy your desired method (eg. for shh keys copy and use git clone in your terminal)
 ## License
