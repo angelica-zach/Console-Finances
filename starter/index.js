@@ -106,22 +106,27 @@ for ( var i=0 ; i< finances.length; i++){
   date.push(months);
   totalProfit += finances[i][1];
 }
-
-var difference=0;
-for ( var i=0 ; i< number.length; i++){
-  difference+= (number[i+1]-number[i]);
+// new array for differences month to month
+var differences=new Array();
+var differencesSum = 0;
+// loop for differences
+for (var i = 0; i < number.length - 1; i++) {
+  var difference = number[i + 1] - number[i];
+  differences.push(difference);
+  differencesSum += difference;
 }
+// calculating average and rounding
+var change=(differencesSum/(period-1));
+var rounded=(Math.round(100*change)/100).toFixed(2) ;
 
- var change =difference/period-1;
-console.log(change)
 
 
 // messages
-console.log("Financial report")
-console.log("-----------------")
+console.log("Financial report");
+console.log("-----------------");
 console.log( "There are "+period+" months in the period");
 console.log( "Total profit: £"+totalProfit);
-// console.log( "Average change: "+);
+ console.log( "Average change: "+ rounded);
 // console.log( "Greatest Increase in Profits/Losses: "+);
 // console.log( "Greatest Decrease in Profits/Losses: "+);
 
