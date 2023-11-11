@@ -5,7 +5,7 @@ Here, i was provided with an array (seen in the js file) and then had to add cod
 ### The final answer
 ![answer](starter/images/answer.png)
 ### link to site
-
+https://angelica-zach.github.io/Console-Finances/
 ## Installation
 Press the green  code button in the top right of the screen and copy your desired method (eg. for shh keys copy and use git clone in your terminal)
 ## License
