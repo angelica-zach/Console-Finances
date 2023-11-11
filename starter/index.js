@@ -118,15 +118,21 @@ for (var i = 0; i < number.length - 1; i++) {
 // calculating average and rounding
 var change=(differencesSum/(period-1));
 var rounded=(Math.round(100*change)/100).toFixed(2) ;
-
-
+// finding max and minimum of changes
+var maxDifference = Math.max(...differences);
+var minDifference = Math.min(...differences);
+var placeMax=differences.indexOf(maxDifference);
+var placeMin=differences.indexOf(minDifference);
+// using indexing to find corresponding month(adding one as chnage is calculated with the length -1 as the time is calculated between the months)
+var monthMax=date[placeMax+1];
+var monthMin=date[placeMin+1];
 
 // messages
 console.log("Financial report");
 console.log("-----------------");
 console.log( "There are "+period+" months in the period");
 console.log( "Total profit: £"+totalProfit);
- console.log( "Average change: "+ rounded);
-// console.log( "Greatest Increase in Profits/Losses: "+);
-// console.log( "Greatest Decrease in Profits/Losses: "+);
+console.log( "Average change: "+ rounded);
+console.log( "Greatest Increase in Profits/Losses: "+ monthMax +" £" +maxDifference);
+console.log( "Greatest Decrease in Profits/Losses: "+ monthMin +" £" +minDifference);
 
