@@ -90,14 +90,38 @@ var finances = [
 // finding length
 var period= finances.length ;
 
-// finding total protit overall
+// finding total profit overall
 var totalProfit= 0;
+
+// setting up new arrays for ease of access
+const  number= new Array();
+const  date= new Array();
+
 
 // extracting months and numbers from array
 for ( var i=0 ; i< finances.length; i++){
   var months=finances[i][0];
   var numbers=finances[i][1];
+  number.push(numbers);
+  date.push(months);
   totalProfit += finances[i][1];
 }
+
+var difference=0;
+for ( var i=0 ; i< number.length; i++){
+  difference+= (number[i+1]-number[i]);
+}
+
+ var change =difference/period-1;
+console.log(change)
+
+
 // messages
+console.log("Financial report")
+console.log("-----------------")
 console.log( "There are "+period+" months in the period");
+console.log( "Total profit: £"+totalProfit);
+// console.log( "Average change: "+);
+// console.log( "Greatest Increase in Profits/Losses: "+);
+// console.log( "Greatest Decrease in Profits/Losses: "+);
+
